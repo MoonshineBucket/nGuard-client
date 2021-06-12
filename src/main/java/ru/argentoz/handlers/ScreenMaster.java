@@ -98,7 +98,7 @@ public class ScreenMaster {
 
                     IMAGE_WRITER.write(null, new IIOImage(bufferedImage,
                             null, null), IMAGE_WRITE_PARAM);
-                    IMAGE_WRITER.dispose();
+                    //IMAGE_WRITER.dispose(); // fix dispose
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
